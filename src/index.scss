@@ -1,6 +1,47 @@
+@import 'variables';
+
+
+//Globals
+body {
+  background-color: $black;
+}
+
+// *:focus {
+//   outline: 1px solid $purple;
+//   box-sizing: border-box;
+// }
+
+*:focus {
+  outline: none;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+}
+
+*, p, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
 .redBg {
     background-color: red;
     border-radius: 5px;
     color: white;
     padding: 5px;
+}
+
+.logo {
+  width: 100%;
+  max-width: 250px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }

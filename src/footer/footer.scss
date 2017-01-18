@@ -1,0 +1,41 @@
+@import '../variables';
+
+.footerWrap{
+  background-color: #13063B;
+  overflow: auto;
+  background-image: url(../img/footer-shapes.svg);
+  background-position: bottom left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  // lost-center: 1200px 30px flex;
+  .footerWrapInner {padding: 100px 50px 130px 50px;}
+  ul {
+  margin-top: 10px;
+  position: static;
+  float: right;
+  top: auto;
+  }
+}
+
+.footerInfo {
+  float: left;
+  color: $white;
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  p {
+    margin-bottom: 40px;
+    margin-top: 0;
+  }
+}
+
+.footerShapes {
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  bottom: 0;
+  float: left;
+  z-index: 0;
+}

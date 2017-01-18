@@ -1,0 +1,45 @@
+@import '../variables';
+
+.socialRoot {
+  background: #FAFAFA;
+  z-index: 0;
+  position: relative;
+}
+
+.socialWrap {
+    lost-center: 800px 20px flex;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 80px;
+    img {
+      height: 100px;
+      // z-index: 2;
+      z-index: 2;
+
+      width: 100px;
+      height: 100px;
+      position: relative;
+    }
+}
+
+.iconWrap a:hover .socialIcon {
+  background: $red;
+}
+
+.socialIcon {
+  position: relative;
+  background: $purple;
+  width: 70px;
+  height: 70px;
+  left: 15px;
+  z-index: 1;
+  top: -91px;
+}
+
+.iconWrap {
+  display: block;
+  margin: auto;
+}

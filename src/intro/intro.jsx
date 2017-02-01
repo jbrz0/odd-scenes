@@ -4,11 +4,15 @@ import React from 'react';
 import Whale from '../img/whale.png';
 import Octopus from '../img/octopus.png';
 
+var Scroll  = require('react-scroll');
+var Element    = Scroll.Element;
+
 export default class Intro extends React.Component {
   render() {
     return (
-      <div className={s.introRoot}>
 
+      <div className={s.introRoot}>
+      <Element name="info">
         <img src={Octopus} className={s.octopus} />
         <div className={s.introWrap}>
           <div className={s.introCard}>
@@ -17,11 +21,12 @@ export default class Intro extends React.Component {
              illustrations, web and film media. Find work and updates
              over the web on Instagram, Tumblr, Twitter or Facebook.
              More projects coming soon. for inquiries email
-             <a href="#"> oddscenes@gmail.com</a></p>
+            &nbsp;<a href="mailto:oddscenes@gmail.com">oddscenes@gmail.com</a></p>
           </div>
           <img src={Whale} className={s.whale} />
         </div>
 
+      </Element>
       </div>
     )
   }

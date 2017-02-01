@@ -3,6 +3,7 @@ var webpack = require('webpack');
 var path = require('path');
 var loaders = require('./webpack.loaders');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 var DashboardPlugin = require('webpack-dashboard/plugin');
 
 const HOST = process.env.HOST || "127.0.0.1";
@@ -76,5 +77,6 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: './src/template.html'
 		}),
+		new FaviconsWebpackPlugin('./src/img/favicon.png'),
 	]
 };

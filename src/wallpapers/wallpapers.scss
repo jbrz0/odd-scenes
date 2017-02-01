@@ -30,7 +30,7 @@
 }
 
 .wallpaperWrap {
-  lost-center: 1200px 30px flex;
+  lost-center: 1200px 0px flex;
   color: white;
   padding-bottom: 100px;
   h2 {
@@ -41,7 +41,14 @@
     width: 0;
     position: absolute;
     margin-top: 128px;
-    margin-left: 14px;
+    // margin-left: 14px;
+    margin-left: 34px;
+  }
+}
+
+@media (max-width: 520px) {
+  .wallpaperWrap {
+    padding-bottom: 60px;
   }
 }
 
@@ -58,6 +65,19 @@
   margin: auto !important;
 }
 
+@media (max-width: 759px) {
+  .face {
+    float: right;
+    left: auto;
+  }
+}
+
+@media (max-width: 540px) {
+  .face {
+    display: none !important;
+  }
+}
+
 .ball {
   position: absolute;
   // z-index: -1;
@@ -65,16 +85,42 @@
   margin-top: -330px;
   max-width: 1600px;
   opacity: 0.08;
+  width: 86%;
+  left: 0; right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  display: block;
   // left: 280px;
+  left: 56%;
+  transform: translateX(-50%);
 }
 
+@media (max-width: 775px) {
+  .ball {
+    display: none;
+  }
+}
+
+// .ballBg {
+//   width: 100%;
+//   height: 100%;
+//   background: red;
+//   position: absolute;
+//   z-index: -2;
+//   margin: 0;
+// }
 // Modal Styles for Wallpapers
 
 .wallpaperImg {
   width: 100%;
   max-width: 840px;
   display: block;
-  margin: 24px auto auto auto;
+  // margin: 24px auto auto auto;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .wallpaperModalWrap {
@@ -103,7 +149,8 @@
 }
 
 .downloadBtn {
-  background: $red;
+  background: rgba($black, 0.6);
+  border: 1px solid $black;
   padding: 10px 30px;
   text-align: center;
   border-radius: 8px;
@@ -111,6 +158,12 @@
   text-decoration: none;
   margin-top: -8px;
   display: inline-block;
+  font-size: 14px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   &:hover {
     background: $darkteal;

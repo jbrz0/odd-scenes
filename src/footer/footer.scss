@@ -31,6 +31,16 @@
   }
 }
 
+@media (max-width: 759px) {
+  .footerInfo {
+    width: 100%;
+    h2, p {
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
+
 .footerShapes {
   width: 100%;
   max-width: 400px;

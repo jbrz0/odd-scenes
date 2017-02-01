@@ -11,8 +11,18 @@ right: 30px;
 // z-index: 3;
 z-index: 0;
 
+li {
+  cursor: pointer;
+}
+
   a {
     text-decoration: none;
+  }
+}
+
+@media (max-width: 759px) {
+  .menu {
+    display: none;
   }
 }
 

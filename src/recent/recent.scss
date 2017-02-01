@@ -74,3 +74,45 @@
     background: $darkteal;
   }
 }
+
+@media (max-width: 760px) {
+  .grid, .gridShift {
+    height: 150px;
+  }
+  .gridShift {
+    top: -170px;
+  }
+  .gridTall {
+    height: 320px;
+  }
+  .tallInner div h3 {
+    text-align: center;
+    font-size: 15px;
+  }
+  .tallInner p {
+    display: none;
+  }
+  .tallStretch {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 759px) {
+  .recentWrap {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .grid, .gridTall, .gridShift, .gridSpace {
+    lost-column: 1/1 1 0 flex;
+    margin: 0;
+  }
+  .recentWrap {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: -90px;
+  }
+
+}

@@ -1,6 +1,9 @@
 import s from './recent.scss';
-import cx from 'classnames';
+// import cx from 'classnames';
 import React from 'react';
+
+var Scroll  = require('react-scroll');
+var Element    = Scroll.Element;
 
 import gridOne from '../img/recent/vaporwave.png';
 import gridTwo from '../img/recent/city.png';
@@ -32,7 +35,7 @@ const imgTwelve = { backgroundImage: "url(" + gridTwelve + ")", }
 export default class Recent extends React.Component {
   render() {
     return (
-      <div>
+      <div><Element name="feed">
 
         <div className={s.recentWrap}>
           <div className={s.grid} style={imgOne}>
@@ -62,8 +65,9 @@ export default class Recent extends React.Component {
                 <p>See some of the latest creations, for more check
                   out the profile pages below. Many of the pieces are
                   also available as T-shirts or other merch.</p>
-                  <a href="http://instagram.com/oddscenes">
-                  <button className={s.recentBtn}>VISIT INSTAGRAM</button>
+                  {/* <a href="http://instagram.com/oddscenes"> */}
+                  <a href="http://oddscenes.tumblr.com">
+                  <button className={s.recentBtn}>VISIT TUMBLR</button>
                   </a>
               </div></div>
             </div>
@@ -94,7 +98,7 @@ export default class Recent extends React.Component {
 
         </div>
 
-      </div>
+      </Element></div>
     )
   }
 }

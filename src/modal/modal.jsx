@@ -12,7 +12,7 @@ export default class ModalOne extends React.Component {
         isOpen={this.state.modalIsOpen}
         onAfterOpen={this.afterOpenModal}
         onRequestClose={this.closeModal}
-        style={customStyles}
+        // style={customStyles}
       >
         <h2 ref="subtitle">Hello Modal One !!!!</h2>
         <button onClick={this.closeModal}>close</button>

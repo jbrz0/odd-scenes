@@ -43,3 +43,27 @@
   display: block;
   margin: auto;
 }
+
+@media(max-width: 580px) {
+  .iconWrap {
+    width: 100%;
+    height: 94px;
+    a img {
+      display: block;
+      margin: auto;
+    }
+    a {
+      height: 94px;
+      display: block;
+    }
+  }
+  .socialIcon {
+    display: block;
+    margin: auto;
+    left: 0;
+  }
+  .socialWrap {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}

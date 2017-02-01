@@ -20,18 +20,21 @@
 
 .whale {
   padding: 100px 30px;
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    position: relative;
-    clear: both;
-    // margin-right: 100px;
-    right: 0;
-    left: auto;
-    display: block;
-    // margin: auto 160px auto auto;
-    margin: auto auto auto auto;
-    right: -226px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  position: relative;
+  clear: both;
+  right: 0;
+  left: auto;
+  display: block;
+  margin: auto auto auto auto;
+  right: -226px;
+}
+@media (max-width: 540px) {
+  .whale {
+    display: none;
+  }
 }
 
 .introCard {
@@ -58,6 +61,23 @@
   }
   a {
     color: $white;
+  }
+}
+
+@media (max-width: 540px) {
+  .introCard {
+    background: transparent;
+    width: 100%;
+    max-width: 440px;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    padding: 30px;
+    display: block;
+    margin: auto;
+    margin-top: 56px;
+    margin-bottom: 20px;
   }
 }
 

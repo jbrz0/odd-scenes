@@ -1,5 +1,5 @@
 {
-  "name": "OS Website theme",
+  "name": "odd-scenes",
   "version": "0.0.3",
   "description": "Template files",
   "main": "''",
@@ -25,6 +25,7 @@
     "react": "15.4.2",
     "react-dom": "15.4.2",
     "react-modal": "^1.6.5",
+    "react-scroll": "^1.4.5",
     "react-search-input": "^0.10.4",
     "sass-loader": "^4.0.2"
   },
@@ -40,6 +41,7 @@
     "boron": "^0.2.3",
     "css-loader": "0.26.1",
     "extract-text-webpack-plugin": "^1.0.1",
+    "favicons-webpack-plugin": "^0.0.7",
     "file-loader": "0.9.0",
     "html-webpack-plugin": "^2.26.0",
     "lost": "^8.0.0",

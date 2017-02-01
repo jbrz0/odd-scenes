@@ -26,6 +26,9 @@
   width: 100%;
   max-width: 187px;
   text-align: center;
+    &:hover {
+      background: $purple;
+    }
   }
 
   a {
@@ -38,6 +41,16 @@
   lost-column: 5/7 2 20px flex;
   height: auto;
 
+}
+
+@media (max-width: 810px){
+  .sidebar {
+    display: none;
+    lost-column: 0/7 7 20px flex;
+  }
+  .shop {
+    lost-column: 7/7 7 10px flex;
+  }
 }
 
 .searchIcon {
@@ -102,6 +115,12 @@
   }
   &:hover {
     opacity: 0.8;
+  }
+}
+
+@media (max-width: 810px){
+  .shopGrid {
+    height: 80px;
   }
 }
 
@@ -189,6 +208,8 @@ background: $black;
 }
 .rightModalBodyInner {
   padding: 10px;
+  width: 100%;
+  max-width: 340px;
 
   ul {
     list-style-type: circle;
@@ -217,7 +238,44 @@ background: $black;
   text-align: center;
   text-decoration: none;
   margin-top: 30px;
+  box-sizing: border-box;
   &:hover {
     background: $darkteal;
+  }
+}
+
+@media (max-width: 1060px) {
+  .rightModalBodyInner {
+    max-width: 250px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 840px) {
+  .rightModalBodyInner {
+    p, li {
+      font-size: 13px;
+    }
+    h2 {
+      font-size: 1.3em;
+    }
+  }
+}
+
+
+@media (max-width: 800px) {
+  .rightModalBody {
+    lost-column: 1/1 1 20px no-flex;
+    height: 72%;
+  }
+  .leftModalBody {
+    lost-column: 1/1 1 20px no-flex;
+    height: 40%;
+  }
+  .shopModalOverlay > div > div {
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
   }
 }

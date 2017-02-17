@@ -24,6 +24,8 @@
     "rc-slider": "^5.4.3",
     "react": "15.4.2",
     "react-dom": "15.4.2",
+    "react-lazy-load": "^3.0.10",
+    "react-lazyload": "^2.2.4",
     "react-modal": "^1.6.5",
     "react-scroll": "^1.4.5",
     "react-search-input": "^0.10.4",

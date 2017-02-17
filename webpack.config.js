@@ -6,6 +6,9 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 var DashboardPlugin = require('webpack-dashboard/plugin');
 
+// const HOST = process.env.HOST || "localhost";
+// const PORT = process.env.PORT || "8888";
+
 const HOST = process.env.HOST || "104.236.52.167";
 const PORT = process.env.PORT || "5000";
 
@@ -42,10 +45,10 @@ loaders.push({
 
 module.exports = {
 	entry: [
-		'react-hot-loader/patch',
+		// 'react-hot-loader/patch',
 		'./src/index.jsx' // your app's entry point
 	],
-	devtool: process.env.WEBPACK_DEVTOOL || 'eval-source-map',
+	devtool: process.env.WEBPACK_DEVTOOL || 'source-map',
 	output: {
 		publicPath: '/',
 		path: path.join(__dirname, 'public'),

@@ -14,7 +14,6 @@ A unique layout media website, as a showcase and commerce hub for a digital illu
 * Webpack
 * Babel
 * NodeJS
-* ReCharts
 * ReactJS
 * Sass
 * PostCSS

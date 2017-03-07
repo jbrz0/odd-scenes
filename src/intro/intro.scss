@@ -1,7 +1,6 @@
 @import '../variables';
 
 .introWrap {
-  // background: red;
   margin: 0;
   width: 100%;
   max-width: 1200px;
@@ -40,23 +39,18 @@
 .introCard {
   background: $darkpurple;
   width: 100%;
-  // max-width: 450px;
   max-width: 440px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 30px 30px 40px 52px;
-  // padding-left: 52px;
-
   p {
     font-size: 14px;
     line-height: 23px;
   }
-
   p, h3 {
     color: $white;
-    // max-width: 360px;
     max-width: 330px;
   }
   a {
@@ -88,5 +82,4 @@
   margin-right: -250px;
   width: 100%;
   max-width: 1600px;
-  // right: -220px;
 }

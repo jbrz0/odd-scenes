@@ -1,14 +1,8 @@
 @import 'variables';
 
-//Globals
 body {
   background-color: $black;
 }
-
-// *:focus {
-//   outline: 1px solid $purple;
-//   box-sizing: border-box;
-// }
 
 *:focus {
   outline: none;
@@ -28,13 +22,6 @@ h1, h2, h3, h4 {
 *, p, h5, h6 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-}
-
-.redBg {
-    background-color: red;
-    border-radius: 5px;
-    color: white;
-    padding: 5px;
 }
 
 .logo {

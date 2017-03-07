@@ -1,17 +1,12 @@
 import React from 'react';
 import s from './wallpapers.scss';
-import Face from '../img/face.png';
-import Ball from '../img/uncompressed/ball.png';
-
 import Modal from 'react-modal';
 import Close from '../img/close-modal.svg';
-
 var Scroll  = require('react-scroll');
 var Element    = Scroll.Element;
 
-// import BallLink from '../img/uncompressed/ball.png';
-// const Ball = {backgroundImage: 'url(' + BallLink + ')'}
-
+import Face from '../img/face.png';
+import Ball from '../img/uncompressed/ball.png';
 import WallpaperLinkOne from '../img/wallpapers/lg/face-melt.png';
 import WallpaperLinkTwo from '../img/wallpapers/lg/faces.png';
 import WallpaperLinkThree from '../img/wallpapers/lg/monster.png';
@@ -19,8 +14,6 @@ import WallpaperLinkFour from '../img/wallpapers/lg/octopus.png';
 import WallpaperLinkFive from '../img/wallpapers/lg/space-picker.png';
 import WallpaperLinkSix from '../img/wallpapers/lg/visual-jargon.png';
 import WallpaperLinkSeven from '../img/wallpapers/lg/waffle-cat.png';
-
-// Make lg for download and preview sizes
 import Wallpaper1 from '../img/wallpapers/face-melt.png';
 import Wallpaper2 from '../img/wallpapers/faces.png';
 import Wallpaper3 from '../img/wallpapers/monster.png';
@@ -60,7 +53,6 @@ export default class Wallpapers extends React.Component {
       modalSix: false,
       modalSeven: false,
     };
-
     this.closeModal = this.closeModal.bind(this);
   }
 
@@ -80,16 +72,10 @@ export default class Wallpapers extends React.Component {
      });
   }
 
-
   render() {
     return (
       <Element name="wallpapers">
         <div className={s.wallpaperWrap}>
-
-        {/* <div className={s.ballBg} style={Ball}></div> */}
-
-
-        {/* Modals Start */}
 
         <Modal isOpen={this.state.modalOne} onRequestCancel={this.onRequestCancel} onAfterOpen={this.afterOpenModal} onRequestClose={this.closeModal} style={customStyles} contentLabel="Modal">
           <div className={s.wallpaperModalWrap}><div className={s.wallpaperModalWrapInner}>
@@ -147,13 +133,7 @@ export default class Wallpapers extends React.Component {
           <button className={s.closeModal} onClick={this.closeModal}><img src={Close} /></button>
         </Modal>
 
-
-        {/* Modals End */}
-
-
         <img src={Ball} className={s.ball} />
-
-
 
         <h2>Wallpapers</h2>
         <ul className={s.wallpapers}>

@@ -11,8 +11,6 @@ import Shop from './shop/shop.jsx';
 import Footer from './footer/footer.jsx';
 import Logo from './img/logo.svg';
 
-
-
 export default class App extends React.Component {
   render() {
     return (

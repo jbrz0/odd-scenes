@@ -59,18 +59,14 @@
   position: relative;
   left: 9px;
   opacity: 0.2;
-  // z-index: -1;
   z-index: 0;
 }
 
 .slider {
-  // max-width: 220px;
   width: 205px !important;
-  // width: 60% !important;
   margin-bottom: 20px !important;
   height: 1px !important;
   div {
-    // height: 1px;
   }
   .rc-slider-handle {
     height: 13px !important;
@@ -93,10 +89,8 @@
   color: white;
   text-indent: 16px;
   margin-left: -22px;
-  // z-index: 2;
   z-index: 0;
   position: relative;
-
   width: 100%;
   max-width: 150px;
 }
@@ -104,7 +98,6 @@
 .shopGrid {
   lost-column: 1/5 5 20px no-flex;
   margin-bottom: 20px;
-  // background: lime;
   height: 150px;
   background-size: cover;
   background-position: center center;
@@ -148,11 +141,8 @@ input.searchBar:-moz-placeholder {
   list-style-type: none;
   margin-bottom: 10px;
   padding-left: 0;
-
   width: 100%;
-  // max-width: 60%;
   max-width: 205px;
-
   a {
     text-decoration: none;
     display: block;
@@ -160,7 +150,6 @@ input.searchBar:-moz-placeholder {
   a:hover {
     background: $purple;
   }
-
   li {
     border-left: 5px solid #02F99F;
     padding-left: 10px;
@@ -189,20 +178,16 @@ input.searchBar:-moz-placeholder {
 .leftModalBody {
   lost-column: 1/2 2 20px no-flex;
   lost-align: center;
-  // background: $white;
-  // background: $white;
   height: 100%;
   img {
     width: 100%;
-    // max-width: 700px;
     max-width: 500px;
-    // height: 100%;
   }
 }
 .rightModalBody {
   lost-column: 1/2 2 20px no-flex;
   lost-align: center;
-background: $black;
+  background: $black;
   height: 100%;
   color: $white;
 }
@@ -210,20 +195,18 @@ background: $black;
   padding: 10px;
   width: 100%;
   max-width: 340px;
-
   ul {
     list-style-type: circle;
     padding-left: 22px;
-
     li {
       margin-bottom: 8px;
     }
   }
-
   p {
     font-size: 14px;
   }
 }
+
 .price {
   font-size: 2em;
 }
@@ -261,7 +244,6 @@ background: $black;
     }
   }
 }
-
 
 @media (max-width: 800px) {
   .rightModalBody {

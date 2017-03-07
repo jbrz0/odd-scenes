@@ -1,18 +1,17 @@
 import s from './intro.scss';
 import React from 'react';
+var Scroll  = require('react-scroll');
+var Element    = Scroll.Element;
 
 import Whale from '../img/whale.png';
 import Octopus from '../img/octopus.png';
 
-var Scroll  = require('react-scroll');
-var Element    = Scroll.Element;
-
 export default class Intro extends React.Component {
   render() {
     return (
-
       <div className={s.introRoot}>
       <Element name="info">
+
         <img src={Octopus} className={s.octopus} />
         <div className={s.introWrap}>
           <div className={s.introCard}>

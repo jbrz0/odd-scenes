@@ -16,7 +16,7 @@ export default class Intro extends React.Component {
         <div className={s.introWrap}>
           <div className={s.introCard}>
             <h3>visual jargon</h3>
-            <p>Odd Scenes is an digital media project using
+            <p>Odd Scenes is a digital media project using
              illustrations, web and film media. Find work and updates
              over the web on Instagram, Tumblr, Twitter or Facebook.
              More projects coming soon. for inquiries email
